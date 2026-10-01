@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 03</title>
+    </head>
+    <body>
+        <form method="post" style="border: solid; margin: 0 auto; width: 35%; padding: 30px;">
+            <a href="http://www.swin.edu.au" target="blank"><img src="logo.png"></a>
+            <h1>CWA Help Desk Appointment</h1>
+            <p style="size: 200%;">The Help Desk is located at ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+            <p style="size: 200%;">Check Blackboard for when CWA tutors will be there</p>
+            <fieldset id="StudentDetails" style="padding: 20px;">
+                <legend>Student details</legend>
+                <label for="StudentId">Student ID: </label>
+                <input id="StudentId" type="text" pattern="SWS[0-9{5}]" required name="StudentID" ><br><br>
+                <label for="GivenName">Given Name: </label>
+                <input id="GivenName" type="text" pattern="[a-zA-z ]+" required  name="GivenName">&nbsp;&nbsp;&nbsp;
+                <label for= "FamilyName">Family Name: </label>
+                <input id="FamilyName" name="FamilyName" type="text" pattern="[a-zA-z ]+" required>
+            </fieldset>
+            <fieldset id="YourUnit" style="padding: 20px;">
+                <legend>Your unit</legend>
+                
+                <input type="radio" id="COS10011" name="Course">
+                <label for="COS10011" >COS10011</label>
+                <input type="radio" name="Course"id="COS60004">
+                <label for="COS60004" >COS60004</label>
+                <input type="radio" name="Course" id="COS60007">
+                <label for="COS60007">COS60007</label><br><br>
+                <label for="YourTutor">Your Tutor: </label>
+                <select id="YourTutor" >
+                    <option value="">Please Select</option>
+                </select>
+            </fieldset>
+            <fieldset id="Issue" style="padding: 20px;">
+                <legend>Your issue</legend>
+                <label for="HTML">HTML</label>
+                <input type = "checkbox" id="HTML">
+                <label for="CSS">CSS</label>
+                <input type = "checkbox" id="CSS">
+                <label for="JavaScript">JavaScript</label>
+                <input type = "checkbox" id="JavaScript">
+                <label for="PHP">PHP</label>
+                <input type = "checkbox" id="PHP">
+                <label for="MySQL">MySQL</label>
+                <input type = "checkbox" id="MySQL"><br><br>
+                <label for="Description">Description of Issue: </label><br>
+                <br><textarea  style="width: 50%; height: 50px;"id="Description" placeholder="Write description of your problem here..."></textarea>
+            </fieldset>
+            <fieldset style="padding: 20px;" id="Date">
+                <legend>Preferred Date/Time</legend>
+                <label for="Date">Date: </label>
+                <input type="date" id="Date" placeholder="dd/mm/yyyy">
+                <br><br><label for="Time">Time: </label>
+                <input type="time" id="Time" placeholder="00:00">
+            </fieldset><br>
+            <button type="submit">Book</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </body>
+</html>
