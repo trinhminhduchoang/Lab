@@ -1,0 +1,74 @@
+/*
+    file:style.css
+    Author:Duc Hoang
+    Class:COS10026
+    Day:8/10/2026
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    size: 80%;
+}
+
+body{
+    border: solid black;
+    border-style: inline;
+    padding:15px;
+        width:fit-content;
+        margin: 0 auto;
+}
+
+h1{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.headerlink {
+    display: inline-block;
+    border: solid black;
+    border-style:inset;
+    padding: 5px;
+    text-decoration: none;
+    color: green;
+    background-color: aliceblue;
+}
+
+.headerlink:hover{
+    transform: scale(5);
+    transition: transform 5s ease-in-out;
+    color:blueviolet;
+
+}
+h2{
+    color:lightseagreen;
+    font-weight: bold;
+}
+
+#para {
+    color: gray;
+}
+#head {
+    color: red;
+}
+
+.special{
+    color: orange;
+}
+
+table,th,td {
+    border:solid;
+    border-collapse: collapse;
+}
+
+a{
+    color: black;
+}
+
+#images{
+    text-align: center;
+}
+
+footer{
+    text-align:right;
+}
