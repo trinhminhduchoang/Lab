@@ -1,0 +1,149 @@
+/* styling definition list */
+dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+  }
+  dt {
+    clear: left;
+	float: left;
+    width: 40%;
+	text-align: right;
+    font-weight: bold;
+    color: green;
+  }
+  dt::after {
+    content: " :"; 
+  }
+
+  dd {
+    width: 55%;
+	margin-left: 42%;
+  }
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  color: purple;
+  background-color: #ccc;
+  padding:10px;
+  text-align: center;
+
+}
+
+nav a{
+  border:solid 3px rgb(190, 186, 186);
+  flex-direction: row;
+  padding: 7px;
+  text-decoration: none;
+  color:black;
+  transition: transform 0.3s;
+  display:inline-block;
+  background-color:white;
+}
+
+nav a:hover{
+  transform: scale(5);
+  border-color:blueviolet;
+}
+
+body {
+  border: solid black;
+  padding:15px;
+  width: 60%;
+  margin:auto;
+  height: 10%;
+}
+
+h2 {
+  color:rgb(10, 117, 81);
+}
+
+aside{
+  border-top:solid purple;
+  border-left: solid purple;
+  border-right: solid palevioletred;
+  border-bottom: solid palevioletred;
+  border-radius:15px;
+  justify-content: center;
+  width: 30%;
+  float:right;
+  padding: 10px;
+  background:linear-gradient(to bottom,#cccccc 0%,#ffffff 30%);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+  font-style:italic;
+  margin:10px;
+  text-shadow: 1px 1px 2px rgb(70, 70, 70);
+  height: 200px;
+  justify-content: center;
+  align-content: center;
+}
+
+.special {
+  color:rgb(255, 104, 3);
+  font-weight:bold;
+}
+
+#lists {
+
+  float: left;
+  justify-self: center;
+
+}
+#tables {
+  float:right;
+  justify-self: center;
+}
+.gridholder {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+section h2,section h3 {
+  text-align:center ;
+}
+
+table,th,td{
+  border-top:solid ;
+  border-bottom: solid rgb(247, 25, 25) ;
+  border-left: solid rgb(4, 255, 4);
+  border-right:solid blue;
+  border-collapse: collapse;
+  padding: 5px;
+    animation: rainbow-border 3s linear infinite;
+}
+figure {
+  border:solid black 1px;
+  text-align:center;
+}
+
+.footer {
+  text-align:center;
+}
+#hyperlinks{
+  text-align: center;
+}
+
+
+@keyframes rainbow {
+  0% {color:red;}
+  25%{color:yellow;}
+  50%{color:green;}
+  75%{color:blue;}
+  100%{color:purple;}
+
+}
+.rainbow{
+  animation: 2s infinite rainbow;
+}
+
+
+@keyframes rainbow-border {
+    0%   { border-color: red; }
+    20%  { border-color: orange; }
+    40%  { border-color: green; }
+    60%  { border-color: blue; }
+    80%  { border-color: purple; }
+    100% { border-color: red; } /* Smooth loop back to start */
+}
