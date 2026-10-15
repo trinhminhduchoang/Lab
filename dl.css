@@ -45,7 +45,8 @@ nav a{
 
 nav a:hover{
   transform: scale(5);
-  border-color:blueviolet;
+  animation: rainbow-border 3s linear infinite;
+  animation: 2s infinite rainbow;
 }
 
 body {
@@ -111,7 +112,7 @@ table,th,td{
   border-right:solid blue;
   border-collapse: collapse;
   padding: 5px;
-    animation: rainbow-border 3s linear infinite;
+  animation: rainbow-border 3s linear infinite;
 }
 figure {
   border:solid black 1px;
